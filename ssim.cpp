@@ -157,7 +157,7 @@ int main(int argc, char *argv[])
     cout << "Ref start frame: " << refFramesToWait << ", Test start frame:" << testFramesToWait << endl;
     cout << "Final Results" << endl;
 
-    cout << " R "  << setiosflags(ios::fixed) << setprecision(2) << redSimilarity << "%"
+    cout << "R "  << setiosflags(ios::fixed) << setprecision(2) << redSimilarity << "%"
         << " G "  << setiosflags(ios::fixed) << setprecision(2) << greenSimilarity << "%"
         << " B "  << setiosflags(ios::fixed) << setprecision(2) << blueSimilarity << "%";
 
