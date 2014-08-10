@@ -45,5 +45,6 @@ mingw32-make install
 #Do not run "mingw32-make clean"
 ```
 
-
+##References
+1. [OpenCV install with Codeblocks and Mingw](http://kevinhughes.ca/tutorials/opencv-install-on-windows-with-codeblocks-and-mingw/)
 
