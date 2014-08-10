@@ -16,7 +16,7 @@ ssim reference.avi test.avi 5 13
 
 ##Compiling this program
 ```bash
-cmake -G "MinGW Makefiles"
+cmake -G "MinGW Makefiles" #First time only
 mingw32-make
 ```
 
