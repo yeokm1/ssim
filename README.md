@@ -47,4 +47,5 @@ mingw32-make install
 
 ##References
 1. [OpenCV install with Codeblocks and Mingw](http://kevinhughes.ca/tutorials/opencv-install-on-windows-with-codeblocks-and-mingw/)
+2. [Video Input with OpenCV and similarity measurement](http://docs.opencv.org/doc/tutorials/highgui/video-input-psnr-ssim/video-input-psnr-ssim.html)
 
