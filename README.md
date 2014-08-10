@@ -30,7 +30,7 @@ mingw32-make
 
 2. Download and install [Cmake for Windows](http://www.cmake.org/cmake/resources/software.html). Choose to add to system path during installation.
 
-3. Download OpenCV 2.4.9 [here](https://github.com/Itseez/opencv/archive/2.4.9.zip) from the github releases. Do not use the official Windows binary unless you wish to use Visual Studio to compile your project. Unzip the zip file to `C:\OpenCV`.
+3. Download OpenCV 2.4.9 [here](https://github.com/Itseez/opencv/archive/2.4.9.zip) from the github releases. Do not use the official Windows binary unless you wish to use Visual Studio to compile your project. Unzip the zip file to `C:\opencv`.
 
 4. Open CMake GUI. Set source to `C:\opencv` and where-to-build to `C:\opencv\build\x86\mingw`. Click "Configure" then "Generate"
 
