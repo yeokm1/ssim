@@ -1,8 +1,24 @@
 ssim
 ====
 
-Program to measure the similarity between two videos using the OpenCV library and the structural similarity algorithm (SSIM). This is modified from the video-input-psnr-ssim tutorial of OpenCV. This program has been tested to work on the Windows platform only.
+Program to measure the similarity between two videos using the OpenCV library and the structural similarity algorithm (SSIM). This is modified from the [video-input-psnr-ssim tutorial](http://docs.opencv.org/doc/tutorials/highgui/video-input-psnr-ssim/video-input-psnr-ssim.html) of OpenCV. This program has been tested to work on the Windows platform only.
 
+##Differences from video-input-psnr-ssim tutorial
+1. Calculate SSIM for each and every frame.
+2. Show overall progress every 50 frames.
+3. Start comparison at different points of both videos.
+
+##Usage
+```bash
+#ssim reference_video_file test_video_file reference_start_frame test_start_frame
+ssim reference.avi test.avi 5 13
+```
+
+##Compiling this program
+```bash
+cmake -G "MinGW Makefiles"
+mingw32-make
+```
 
 ##Dependencies I used
 1. OpenCV (2.4.9)
