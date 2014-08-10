@@ -154,6 +154,7 @@ int main(int argc, char *argv[])
     float greenSimilarity = (greenChannelTotal / comparisonFrameNum) / 100.0;
     float blueSimilarity = (blueChannelTotal / comparisonFrameNum) / 100.0;
 
+    cout << "Ref start frame: " << refFramesToWait << ", Test start frame:" << testFramesToWait << endl;
     cout << "Final Results" << endl;
 
     cout << " R "  << setiosflags(ios::fixed) << setprecision(2) << redSimilarity << "%"
