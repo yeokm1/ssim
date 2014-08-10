@@ -7,6 +7,8 @@
 #include <opencv2/imgproc/imgproc.hpp>  // Gaussian Blur
 #include <opencv2/highgui/highgui.hpp>  // OpenCV window I/O
 
+#define STATUS_PER_NUM_FRAMES 50
+
 using namespace std;
 using namespace cv;
 
@@ -126,7 +128,7 @@ int main(int argc, char *argv[])
         greenChannelTotal += mssimV.val[1] * 10000; //To store up to 2 decimal places
         blueChannelTotal += mssimV.val[0] * 10000; //To store up to 2 decimal places
 
-        if((comparisonFrameNum % 50) == 0){
+        if((comparisonFrameNum % STATUS_PER_NUM_FRAMES) == 0){
             cout << "Finished " << setfill('0') << setw(6) << comparisonFrameNum << " frames,";
 
             float redSimilarity = (redChannelTotal / comparisonFrameNum) / 100.0;
