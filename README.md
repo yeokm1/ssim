@@ -14,6 +14,15 @@ Program to measure the similarity between two videos using the OpenCV library an
 ssim reference.avi test.avi 5 13
 ```
 
+
+##Screenshots
+
+![Screen](/misc/working.png)
+Preview windows are shown to indicate progress.
+
+![Screen](/misc/results.png)
+A percentage result is given at the end.
+
 ##Compiling this program
 ```bash
 cmake -G "MinGW Makefiles" #First time only
