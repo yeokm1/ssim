@@ -72,8 +72,15 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    const char* WIN_UT = "Under Test";
-    const char* WIN_RF = "Reference";
+    string refFilename = argv[1];
+    string testFilename = argv[2];
+
+    string refHeader = "Reference: " + refFilename;
+    string testHeader = "Test: " + testFilename;
+
+
+    const char* WIN_RF = refHeader.c_str();
+    const char* WIN_UT = testHeader.c_str();
 
     // Windows
     namedWindow(WIN_RF, CV_WINDOW_AUTOSIZE);
