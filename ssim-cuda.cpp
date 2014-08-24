@@ -57,6 +57,12 @@ int main(int argc, char *argv[])
     long testFramesToWait = strtol(argv[4],NULL, 10);
 
 
+    long framesToProcess = -1;
+
+    if(argc >= 6){
+        framesToProcess = strtol(argv[5],NULL, 10);
+    }
+
     char c;
 
     unsigned long refFrameNum = 0;
@@ -176,6 +182,10 @@ int main(int argc, char *argv[])
 
         c = (char)cvWaitKey(delay);
         if (c == 27) break;
+
+        if(framesToProcess >= 0 && comparisonFrameNum >= framesToProcess){
+            break;
+        }
     }
 
 
