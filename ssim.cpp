@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
     if (argc < 5)
     {
         cout << "Not enough parameters" << endl;
-        cout << "Command: ssim reference_video.avi test_video.avi x y " << endl;
-        cout << "Where x is start frame of reference video and y is the start frame of test video" << endl;
+        cout << "Command: ssim reference_video.avi test_video.avi x y [z]" << endl;
+        cout << "Where x is start frame of reference video and y is the start frame of test video. [z] (optional) is the number of frames to process. If not specified, app will process to end of any video." << endl;
 
         return -1;
     }
@@ -36,6 +36,13 @@ int main(int argc, char *argv[])
 
     long refFramesToWait = strtol(argv[3],NULL, 10);
     long testFramesToWait = strtol(argv[4],NULL, 10);
+
+
+    long framesToProcess = -1;
+
+    if(argc >= 6){
+        framesToProcess = strtol(argv[5],NULL, 10);
+    }
 
 
     char c;
@@ -156,6 +163,11 @@ int main(int argc, char *argv[])
 
         c = (char)cvWaitKey(delay);
         if (c == 27) break;
+
+
+        if(framesToProcess >= 0 && comparisonFrameNum >= framesToProcess){
+            break;
+        }
     }
 
 
