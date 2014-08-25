@@ -42,8 +42,8 @@ int main(int argc, char *argv[])
     if (argc < 5)
     {
         cout << "Not enough parameters" << endl;
-        cout << "Command: ssim reference_video.avi test_video.avi x y " << endl;
-        cout << "Where x is start frame of reference video and y is the start frame of test video" << endl;
+        cout << "Command: ssim reference_video.avi test_video.avi x y [z]" << endl;
+        cout << "Where x is start frame of reference video and y is the start frame of test video. [z] (optional) is the number of frames to process. If not specified, app will process to end of any video." << endl;
 
         return -1;
     }
