@@ -100,7 +100,6 @@ int main(int argc, char *argv[])
 
 
     Mat frameReference, frameUnderTest;
-    double psnrV;
     Scalar mssimV;
 
     for(;;) //Show the image captured in the window and repeat
