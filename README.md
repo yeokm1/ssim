@@ -1,7 +1,7 @@
 ssim
 ====
 
-Program to measure the similarity between two videos using the OpenCV library and the structural similarity algorithm (SSIM). This is modified from the [video-input-psnr-ssim tutorial](http://docs.opencv.org/doc/tutorials/highgui/video-input-psnr-ssim/video-input-psnr-ssim.html) of OpenCV. This program has been tested to work on the Windows platform only.
+Program to measure the similarity between two videos using the OpenCV library and the structural similarity algorithm (SSIM). This is modified from the [video-input-psnr-ssim tutorial](http://docs.opencv.org/doc/tutorials/highgui/video-input-psnr-ssim/video-input-psnr-ssim.html) of OpenCV. This program has been tested to work on the Windows platform only. For the CUDA-optimised version of this program, check out my other [project](https://github.com/yeokm1/ssim-cuda).
 
 ##Differences from video-input-psnr-ssim tutorial
 1. Calculate SSIM for each and every frame.
